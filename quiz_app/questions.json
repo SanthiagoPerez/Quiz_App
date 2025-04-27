@@ -1,0 +1,502 @@
+[
+    {
+        "pregunta": "¿Qué significa CPU?",
+        "opciones": [
+            "Central Processing Unit",
+            "Computer Personal Unit",
+            "Control Processing User",
+            "Central Peripheral Unit"
+        ],
+        "respuesta_correcta": "a"
+    },
+    {
+        "pregunta": "¿Cuál es el sistema operativo de Microsoft?",
+        "opciones": [
+            "iOS",
+            "Windows",
+            "Android",
+            "Linux"
+        ],
+        "respuesta_correcta": "b"
+    },
+    {
+        "pregunta": "¿Qué dispositivo sirve para mover el cursor?",
+        "opciones": [
+            "Teclado",
+            "Mouse",
+            "Monitor",
+            "Impresora"
+        ],
+        "respuesta_correcta": "b"
+    },
+    {
+        "pregunta": "¿Qué extensión tienen los archivos de Word?",
+        "opciones": [
+            ".pdf",
+            ".docx",
+            ".txt",
+            ".jpg"
+        ],
+        "respuesta_correcta": "b"
+    },
+    {
+        "pregunta": "¿Qué es Internet?",
+        "opciones": [
+            "Un lenguaje de programación",
+            "Una red de redes",
+            "Un antivirus",
+            "Un procesador de textos"
+        ],
+        "respuesta_correcta": "b"
+    },
+    {
+        "pregunta": "¿Qué es un navegador web?",
+        "opciones": [
+            "Un programa para programar",
+            "Un programa para buscar páginas de internet",
+            "Un programa para diseñar",
+            "Un virus"
+        ],
+        "respuesta_correcta": "b"
+    },
+    {
+        "pregunta": "¿Qué parte del computador almacena los datos permanentemente?",
+        "opciones": [
+            "RAM",
+            "CPU",
+            "Disco duro",
+            "Tarjeta de video"
+        ],
+        "respuesta_correcta": "c"
+    },
+    {
+        "pregunta": "¿Qué significa USB?",
+        "opciones": [
+            "Universal Serial Bus",
+            "United Serial Board",
+            "Ultra Small Band",
+            "Universal System Backup"
+        ],
+        "respuesta_correcta": "a"
+    },
+    {
+        "pregunta": "¿Qué tipo de dispositivo es un escáner?",
+        "opciones": [
+            "De entrada",
+            "De salida",
+            "De almacenamiento",
+            "De procesamiento"
+        ],
+        "respuesta_correcta": "a"
+    },
+    {
+        "pregunta": "¿Cuál de estos es un lenguaje de programación?",
+        "opciones": [
+            "HTML",
+            "Python",
+            "Windows",
+            "Google"
+        ],
+        "respuesta_correcta": "b"
+    },
+    {
+        "pregunta": "¿Qué significa WWW?",
+        "opciones": [
+            "World Web Wide",
+            "Wide World Web",
+            "World Wide Web",
+            "Web Wide World"
+        ],
+        "respuesta_correcta": "c"
+    },
+    {
+        "pregunta": "¿Qué es un archivo comprimido?",
+        "opciones": [
+            "Un archivo con menos peso",
+            "Un archivo duplicado",
+            "Un archivo dañado",
+            "Un archivo que no se puede abrir"
+        ],
+        "respuesta_correcta": "a"
+    },
+    {
+        "pregunta": "¿Qué es un firewall?",
+        "opciones": [
+            "Un programa para acelerar la PC",
+            "Un antivirus",
+            "Una barrera de protección de red",
+            "Un sistema operativo"
+        ],
+        "respuesta_correcta": "c"
+    },
+    {
+        "pregunta": "¿Cuál es la función principal de la memoria RAM?",
+        "opciones": [
+            "Guardar archivos",
+            "Procesar gráficos",
+            "Almacenar datos temporalmente",
+            "Mejorar la conexión a internet"
+        ],
+        "respuesta_correcta": "c"
+    },
+    {
+        "pregunta": "¿Qué dispositivo convierte imágenes en archivos digitales?",
+        "opciones": [
+            "Cámara",
+            "Impresora",
+            "Escáner",
+            "Modem"
+        ],
+        "respuesta_correcta": "c"
+    },
+    {
+        "pregunta": "¿Qué significa IoT?",
+        "opciones": [
+            "Internet of Technology",
+            "Interconnected Operational Tech",
+            "Internet of Things",
+            "Input of Technology"
+        ],
+        "respuesta_correcta": "c"
+    },
+    {
+        "pregunta": "¿Cuál es el software más usado para presentaciones?",
+        "opciones": [
+            "Word",
+            "Excel",
+            "PowerPoint",
+            "Chrome"
+        ],
+        "respuesta_correcta": "c"
+    },
+    {
+        "pregunta": "¿Qué es la nube en informática?",
+        "opciones": [
+            "Un sistema de enfriamiento",
+            "Un almacenamiento en servidores remotos",
+            "Una computadora muy potente",
+            "Un tipo de antivirus"
+        ],
+        "respuesta_correcta": "b"
+    },
+    {
+        "pregunta": "¿Qué hace un antivirus?",
+        "opciones": [
+            "Hace que la computadora sea más rápida",
+            "Mejora la calidad de la pantalla",
+            "Protege contra programas maliciosos",
+            "Aumenta la velocidad de internet"
+        ],
+        "respuesta_correcta": "c"
+    },
+    {
+        "pregunta": "¿Qué es una VPN?",
+        "opciones": [
+            "Una red pública de navegación",
+            "Una red privada virtual",
+            "Un navegador",
+            "Un hardware especial"
+        ],
+        "respuesta_correcta": "b"
+    },
+    {
+        "pregunta": "¿Cuál de estos es un sistema operativo de código abierto?",
+        "opciones": [
+            "Windows",
+            "iOS",
+            "Linux",
+            "macOS"
+        ],
+        "respuesta_correcta": "c"
+    },
+    {
+        "pregunta": "¿Qué es un bit?",
+        "opciones": [
+            "La unidad mínima de almacenamiento",
+            "Un programa",
+            "Una red social",
+            "Un tipo de virus"
+        ],
+        "respuesta_correcta": "a"
+    },
+    {
+        "pregunta": "¿Cuál de estos dispositivos almacena mayor cantidad de información?",
+        "opciones": [
+            "Pendrive",
+            "Disco duro",
+            "CD",
+            "Tarjeta SD"
+        ],
+        "respuesta_correcta": "b"
+    },
+    {
+        "pregunta": "¿Qué es phishing?",
+        "opciones": [
+            "Un ataque para robar información personal",
+            "Una técnica para mejorar internet",
+            "Una app de juegos",
+            "Un error de hardware"
+        ],
+        "respuesta_correcta": "a"
+    },
+    {
+        "pregunta": "¿Cuál de estos no es un lenguaje de programación?",
+        "opciones": [
+            "JavaScript",
+            "C++",
+            "Python",
+            "Chrome"
+        ],
+        "respuesta_correcta": "d"
+    },
+    {
+        "pregunta": "¿Qué puerto se usa generalmente para Internet en computadoras?",
+        "opciones": [
+            "HDMI",
+            "USB",
+            "Ethernet",
+            "VGA"
+        ],
+        "respuesta_correcta": "c"
+    },
+    {
+        "pregunta": "¿Qué programa sirve para diseñar imágenes?",
+        "opciones": [
+            "Excel",
+            "Word",
+            "Photoshop",
+            "PowerPoint"
+        ],
+        "respuesta_correcta": "c"
+    },
+    {
+        "pregunta": "¿Qué comando en Windows permite abrir el administrador de tareas?",
+        "opciones": [
+            "Ctrl + Alt + Delete",
+            "Alt + F4",
+            "Ctrl + Shift + S",
+            "Windows + D"
+        ],
+        "respuesta_correcta": "a"
+    },
+    {
+        "pregunta": "¿Qué dispositivo se utiliza para conectar redes?",
+        "opciones": [
+            "Router",
+            "Impresora",
+            "Monitor",
+            "Disco duro"
+        ],
+        "respuesta_correcta": "a"
+    },
+    {
+        "pregunta": "¿Qué tipo de software es Instagram?",
+        "opciones": [
+            "Sistema operativo",
+            "Aplicación",
+            "Antivirus",
+            "Navegador"
+        ],
+        "respuesta_correcta": "b"
+    },
+    {
+        "pregunta": "¿Qué lenguaje se usa para estructurar páginas web?",
+        "opciones": [
+            "CSS",
+            "HTML",
+            "Java",
+            "Python"
+        ],
+        "respuesta_correcta": "b"
+    },
+    {
+        "pregunta": "¿Qué es una IP?",
+        "opciones": [
+            "Una red de computadoras",
+            "Un protocolo de navegación",
+            "Una dirección única en Internet",
+            "Un servidor de Google"
+        ],
+        "respuesta_correcta": "c"
+    },
+    {
+        "pregunta": "¿Qué función cumple un servidor DNS?",
+        "opciones": [
+            "Bloquear páginas web",
+            "Convertir nombres de dominio en IP",
+            "Crear páginas web",
+            "Eliminar virus"
+        ],
+        "respuesta_correcta": "b"
+    },
+    {
+        "pregunta": "¿Qué tipo de tecnología es Bluetooth?",
+        "opciones": [
+            "Cableada",
+            "Satelital",
+            "Inalámbrica",
+            "Por fibra óptica"
+        ],
+        "respuesta_correcta": "c"
+    },
+    {
+        "pregunta": "¿Qué es un backup?",
+        "opciones": [
+            "Una red local",
+            "Una copia de seguridad",
+            "Un navegador",
+            "Un programa de gráficos"
+        ],
+        "respuesta_correcta": "b"
+    },
+    {
+        "pregunta": "¿Cuál de estos es un protocolo de correo electrónico?",
+        "opciones": [
+            "FTP",
+            "HTTP",
+            "IMAP",
+            "IP"
+        ],
+        "respuesta_correcta": "c"
+    },
+    {
+        "pregunta": "¿Qué es un software de código abierto?",
+        "opciones": [
+            "Un software gratuito",
+            "Un software que cualquiera puede modificar",
+            "Un software antiguo",
+            "Un virus"
+        ],
+        "respuesta_correcta": "b"
+    },
+    {
+        "pregunta": "¿Cuál de estos NO es un sistema de almacenamiento en la nube?",
+        "opciones": [
+            "Dropbox",
+            "Google Drive",
+            "OneDrive",
+            "BitLocker"
+        ],
+        "respuesta_correcta": "d"
+    },
+    {
+        "pregunta": "¿Cuál es el nombre del conector que reemplazó al microUSB?",
+        "opciones": [
+            "Lightning",
+            "USB-C",
+            "HDMI",
+            "VGA"
+        ],
+        "respuesta_correcta": "b"
+    },
+    {
+        "pregunta": "¿Qué significa SaaS?",
+        "opciones": [
+            "Software as a Service",
+            "Security as a System",
+            "Server and Software",
+            "Storage and Access Solution"
+        ],
+        "respuesta_correcta": "a"
+    },
+    {
+        "pregunta": "¿Cuáles de estos son navegadores web?",
+        "opciones": [
+            "Chrome",
+            "Firefox",
+            "Photoshop",
+            "Windows"
+        ],
+        "respuesta_correcta": ["a", "b"]
+    },
+    {
+        "pregunta": "¿Qué lenguajes son usados para desarrollar aplicaciones móviles?",
+        "opciones": [
+            "Swift",
+            "Kotlin",
+            "Excel",
+            "Access"
+        ],
+        "respuesta_correcta": ["a", "b"]
+    },
+    {
+        "pregunta": "¿Qué tecnologías son consideradas de IoT?",
+        "opciones": [
+            "Refrigeradores inteligentes",
+            "Lámparas de escritorio normales",
+            "Termostatos inteligentes",
+            "Calculadoras básicas"
+        ],
+        "respuesta_correcta": ["a", "c"]
+    },
+    {
+        "pregunta": "¿Cuáles son sistemas de control de versiones?",
+        "opciones": [
+            "Git",
+            "Dropbox",
+            "GitHub",
+            "Facebook"
+        ],
+        "respuesta_correcta": ["a", "c"]
+    },
+    {
+        "pregunta": "¿Qué son métodos de ciberseguridad?",
+        "opciones": [
+            "Contraseñas fuertes",
+            "Abrir correos sospechosos",
+            "Autenticación de dos factores",
+            "Conectar Wi-Fi público sin clave"
+        ],
+        "respuesta_correcta": ["a", "c"]
+    },
+    {
+        "pregunta": "¿Qué tipos de almacenamiento existen?",
+        "opciones": [
+            "SSD",
+            "HDD",
+            "CPU",
+            "GPU"
+        ],
+        "respuesta_correcta": ["a", "b"]
+    },
+    {
+        "pregunta": "¿Qué tecnologías están relacionadas con Inteligencia Artificial?",
+        "opciones": [
+            "Machine Learning",
+            "Data Mining",
+            "HDMI",
+            "HTML"
+        ],
+        "respuesta_correcta": ["a", "b"]
+    },
+    {
+        "pregunta": "¿Cuáles de estas son marcas de microprocesadores?",
+        "opciones": [
+            "Intel",
+            "AMD",
+            "Samsung TV",
+            "Oracle"
+        ],
+        "respuesta_correcta": ["a", "b"]
+    },
+    {
+        "pregunta": "¿Qué servicios son de almacenamiento en la nube?",
+        "opciones": [
+            "Google Drive",
+            "iCloud",
+            "Amazon Prime Video",
+            "Adobe Illustrator"
+        ],
+        "respuesta_correcta": ["a", "b"]
+    },
+    {
+        "pregunta": "¿Qué dispositivos permiten conectividad a Internet?",
+        "opciones": [
+            "Router",
+            "Switch",
+            "Impresora",
+            "Escáner"
+        ],
+        "respuesta_correcta": ["a", "b"]
+    }
+]
