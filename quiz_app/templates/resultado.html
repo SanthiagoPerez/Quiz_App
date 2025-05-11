@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilos/styles.css') }}">
+</head>
+<body>
+    <div class="contenedor-resultados">
+        <h1>Resultados Finales</h1>
+        <p><strong>Puntuación Total:</strong> {{ puntuacion }} / 100</p>
+        <form action="/reiniciar" method="GET">
+            <button type="submit" class="boton">Volver al Inicio</button>
+        </form>
+    </div>
+</body>
+</html>

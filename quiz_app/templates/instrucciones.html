@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instrucciones</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilos/styles.css') }}">
+</head>
+<body class="instrucciones-body">
+    <div class="contenedor-instrucciones">
+        <h1 class="mensaje-bienvenida"><strong>¡Hola, {{ nombre }}!</strong></h1>
+        <p class="subtitulo"><strong>Antes de comenzar el quiz, lee atentamente las siguientes instrucciones:</strong></p>
+        <!-- Sección de los asistentes -->
+        <div class="asistentes">
+            <!-- Asistente Santi -->
+            <div class="asistente">
+                <img src="{{ url_for('static', filename='imagenes/robot_santi.png') }}" alt="Asistente Santi" class="asistente-img">
+                <p class="asistente-mensaje">
+                    ¡Hola, Soy <strong>Santi</strong>!<br>
+                    y estoy aquí para ayudarte.
+                </p>
+            </div>
+
+            <!-- Indicaciones en el centro -->
+            <div class="indicaciones">
+                <ul class="lista-instrucciones">
+                    <li>El quiz consta de 10 preguntas seleccionadas aleatoriamente.</li>
+                    <li>Selecciona la respuesta que consideres correcta y haz clic en "Siguiente".</li>
+                    <li>Al finalizar, podrás ver tu puntuación.</li>
+                </ul>
+            </div>
+
+            <!-- Asistente Sara -->
+            <div class="asistente">
+                <img src="{{ url_for('static', filename='imagenes/robot_sara.png') }}" alt="Asistente Sara" class="asistente-img asistente-sara-img">
+                <p class="asistente-mensaje">
+                    ¡Hola, Soy <strong>Sara</strong>!<br>
+                    juntos te daremos las instrucciones para este quiz.
+                </p>
+            </div>
+        </div>
+
+        <!-- Botón para continuar al quiz -->
+        <a href="/preguntas" class="boton">Comenzar Quiz</a>
+    </div>
+</body>
+</html>

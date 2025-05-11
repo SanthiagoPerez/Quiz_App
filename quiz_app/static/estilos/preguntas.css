@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+/* Fondo y configuración general */
+.preguntas-body {
+    background-color: #1FD1E9; /* Fondo azul */
+    font-family: 'Orbitron', sans-serif; /* Fuente futurista */
+    color: #ffffff; /* Texto blanco */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Altura completa de la ventana */
+    margin: 0;
+}
+
+/* Contenedor principal */
+.contenedor-preguntas {
+    background-color: #ffffff; /* Fondo blanco */
+    position: relative; /* Habilita el posicionamiento absoluto para los hijos */
+    text-align: center;
+    width: 90%; /* Ajusta el ancho general */
+    max-width: 1000px; /* Define un ancho máximo */
+    padding: 10px 30px; /* Reduce el espacio interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    min-height: 500px; /* Aumenta la altura mínima */
+    border: 5px solid #051b85fa;
+
+}
+
+/* Título de la pregunta */
+.contenedor-preguntas h1 {
+    font-family: 'Orbitron', sans-serif; /* Fuente personalizada */
+    font-size: 40px; /* Tamaño del texto */
+    color: #051b85fa; /* Color del texto */
+    font-weight: bold; /* Texto en negrita */ 
+    margin-bottom: 35px; /* Espaciado debajo del título */
+}
+
+/* Pregunta */
+.contenedor-preguntas .pregunta p {
+    font-size: 25px; /* Tamaño del texto */
+    font-weight: bold; /* Texto en negrita */
+    color: #333333; /* Color del texto */
+    margin-bottom: 50px; /* Espaciado debajo de la pregunta */
+}
+
+/* Opciones */
+.contenedor-preguntas .opciones {
+    display: flex; /* Activa Flexbox */
+    flex-direction: column; /* Coloca las opciones en una columna */
+    align-items: flex-start; /* Alinea las opciones hacia la izquierda */
+    justify-content: center; /* Centra las opciones verticalmente */
+    gap: 20px; /* Espaciado entre las opciones */
+    min-height: 200px; /* Altura mínima para mantener la estructura */
+    max-height: 200px;
+    margin: 0 auto; /* Centra el contenedor de opciones dentro del contenedor principal */
+    padding-left: 200px; /* Agrega un pequeño espacio desde el borde izquierdo */
+}
+
+.contenedor-preguntas .opciones label {
+    font-size: 20px; /* Tamaño del texto */
+    font-weight: normal; /* Texto normal */
+    font-weight: bold;
+    color: #333333; /* Color del texto */
+    cursor: pointer; /* Cambia el cursor al pasar sobre la opción */
+    display: flex; /* Activa Flexbox */
+    align-items: center; /* Alinea verticalmente el texto y el radio button */
+    gap: 10px; /* Espaciado entre el radio button y el texto */
+}
+.contenedor-preguntas .opciones input[type="radio"] {
+    accent-color: #1FD1E9; /* Cambia el color del radio button a azul oscuro */
+    width: 20px; /* Ajusta el tamaño del botón */
+    height: 20px; /* Ajusta el tamaño del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    border: 5px solid #1FD1E9; /* Borde azul claro */
+    border-radius: 50%; /* Asegura que el botón sea circular */
+    outline: none; /* Elimina el borde predeterminado */
+    appearance: none; /* Elimina el estilo predeterminado del navegador */
+    background-color: #ffffff; /* Fondo blanco */
+}
+/* Estilo cuando el radio button está seleccionado */
+.contenedor-preguntas .opciones input[type="radio"]:checked {
+    background-color: #051b85; /* Fondo azul claro al seleccionarlo */
+    border: 2px solid  #051b85; /* Borde más grueso al seleccionarlo */
+}
+/* Botones */
+.contenedor-preguntas .botones {
+    margin-top: 12px; /* Espaciado superior */   
+}
+
+.contenedor-preguntas .botones button {
+    background-color: #2b9739; /* Fondo verde */
+    color: #ffffff; /* Texto blanco */
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    border: none; /* Sin borde */
+    padding: 15px 40px; /* Espaciado interno */
+    width: 200px;
+    font-size: 19px; /* Tamaño del texto */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.contenedor-preguntas .botones button:hover {
+    background-color: #098f1b; /* Cambia el color al pasar el mouse */
+}

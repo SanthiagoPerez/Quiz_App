@@ -4,22 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz</title>
+    <!-- Enlace al archivo CSS específico para preguntas -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilos/preguntas.css') }}">
 </head>
-<body>
-    <h1>Cuestionario</h1>
-    <form action="/resultado" method="POST">
-        {% for question in questions %}
-            <div>
-                <p><strong>{{ question.pregunta }}</strong></p>
-                {% for opcion in question.opciones %}
-                    <label>
-                        <input type="radio" name="{{ loop.index }}" value="{{ opcion }}">
-                        {{ opcion }}
-                    </label><br>
-                {% endfor %}
+<body class="preguntas-body">
+    <div class="contenedor-preguntas">
+        <h1>Pregunta {{ pregunta_actual + 1 }} de 10</h1>
+        <form action="/preguntas" method="POST">
+            <div class="pregunta">
+                <p><strong>{{ pregunta.pregunta }}</strong></p>
+                <div class="opciones">
+                    {% for opcion in pregunta.opciones %}
+                        <label class="opcion">
+                            <!-- Usar el filtro personalizado 'chr' -->
+                            <input type="radio" name="respuesta" value="{{ loop.index0 | chr }}" required>
+                            {{ opcion }}
+                        </label>
+                    {% endfor %}
+                </div>
             </div>
-        {% endfor %}
-        <button type="submit">Enviar</button>
-    </form>
+            <div class="botones">
+                {% if pregunta_actual < 9 %}
+                    <button type="submit" name="accion" value="siguiente" class="boton">Siguiente</button>
+                {% else %}
+                    <button type="submit" name="accion" value="finalizar" class="boton">Finalizar</button>
+                {% endif %}
+            </div>
+        </form>
+    </div>
 </body>
 </html>

@@ -1,42 +1,40 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz Cultura Tecnológica</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='estilos/styles.css') }}">
-</head>
-<body>
-    <div class="contenedor">
-        <h1>Cultura Tecnológica</h1>
-        <p class="mensaje">¿Estás listo para demostrar lo que sabes? "</p>
-        <p class="mensaje">¡Prepárate para comenzar!</p>
-
-        <div class="barra-carga" id="barra-carga">
-            <div class="barra" id="barra"></div>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quiz Cultura Tecnológica</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='estilos/styles.css') }}">
+    </head>
+    <body>
+        <div class="contenedor">
+            <h1>Cultura Tecnológica</h1>
+            
+            <div class="barra-carga" id="barra-carga">
+                <div class="barra" id="barra"></div>
+            </div>
+    
+            <form action="/instrucciones" method="GET" onsubmit="return iniciarCarga()">
+                <input type="text" name="nombre" placeholder="Escribe tu nombre o apodo" required>
+                <button type="submit">COMENZAR</button>
+            </form>
         </div>
-
-        <form action="/quiz" method="POST" onsubmit="return iniciarCarga()">
-            <input type="text" name="nombre" placeholder="Escribe tu nombre o apodo" required>
-            <button type="submit">COMENZAR</button>
-        </form>
-    </div>
-
-    <script>
-        function iniciarCarga() {
-            let barra = document.getElementById("barra");
-            let progreso = 0;
-            let intervalo = setInterval(function () {
-                if (progreso >= 100) {
-                    clearInterval(intervalo);
-                    document.forms[0].submit(); 
-                } else {
-                    progreso++;
-                    barra.style.width = progreso + "%"; 
-                }
-            }, 10); 
-            return false; 
-        }
-    </script>
-</body>
-</html>
+    
+        <script>
+            function iniciarCarga() {
+                let barra = document.getElementById("barra");
+                let progreso = 0;
+                let intervalo = setInterval(function () {
+                    if (progreso >= 100) {
+                        clearInterval(intervalo);
+                        document.forms[0].submit(); 
+                    } else {
+                        progreso++;
+                        barra.style.width = progreso + "%"; 
+                    }
+                }, 10); 
+                return false; 
+            }
+        </script>
+    </body>
+    </html>
