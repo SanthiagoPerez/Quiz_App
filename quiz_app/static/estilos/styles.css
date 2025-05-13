@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
 body {
-    background-color: #1FD1E9; /* Fondo azul */
+    background-color: #1FD1E9;
     font-family: Arial, sans-serif;
     color: #ffffff;
     display: flex;
@@ -11,15 +12,13 @@ body {
     margin: 0;
 }
 
-
 .contenedor {
     text-align: center;
-    width: 50%; /* Aumenta el ancho general */
-    max-width: 800px; /* Aumenta el ancho máximo */
-    padding: 20px; /* Agrega un poco de espacio interno */
-    margin: 20px auto; /* Centra el contenedor vertical y horizontalmente */
+    width: 50%;
+    max-width: 800px;
+    padding: 20px;
+    margin: 20px auto;
 }
-
 
 h1 {
     color: rgb(0, 0, 0);
@@ -27,18 +26,14 @@ h1 {
     margin-bottom: 60px;
     white-space: nowrap;
     font-family: 'Orbitron', sans-serif;
-    text-align: center; 
+    text-align: center;
     margin-left: -190px;
-
-
 }
-
 
 .mensaje {
     font-size: 20px;
     margin-bottom: 40px;
 }
-
 
 .barra-carga {
     width: 100%;
@@ -50,9 +45,8 @@ h1 {
 .barra {
     height: 100%;
     width: 0;
-    background-color: #5b33ede6;  
+    background-color: #5b33ede6;
 }
-
 
 input[type="text"] {
     width: 80%;
@@ -68,12 +62,11 @@ input[type="text"] {
 
 input[type="text"]:focus {
     outline: none;
-    border-color: #97A7F7;  
+    border-color: #97A7F7;
 }
 
-
 button {
-    background-color: #2b9739; 
+    background-color: #2b9739;
     color: #000000;
     border: 2px solid black;
     padding: 15px 32px;
@@ -91,68 +84,67 @@ button:hover {
 }
 /* Interfaz instrucciones */
 .instrucciones-body {
-    background-color: #1FD1E9; /* Fondo azul */
+    background-color: #1FD1E9;
     font-family: Arial, sans-serif;
     color: #ffffff;
-    display: flex; /* Activa Flexbox */
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
-    min-height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
-    margin: 0; /* Elimina márgenes */
-    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    overflow: hidden;
 }
 
 .contenedor-instrucciones {
-    position: relative; /* Habilita el posicionamiento absoluto para los hijos */
+    position: relative;
     text-align: center;
-    width: 90%; /* Ajusta el ancho general */
-    max-width: 1000px; /* Define un ancho máximo */
-    padding: 10px 30px; /* Reduce el espacio interno */
-    background-color: #ffffff; /* Fondo blanco */
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
-    margin: 0 auto; /* Centra el contenedor horizontalmente */
-    height: auto; /* Ajusta la altura automáticamente */
+    width: 90%;
+    max-width: 1000px;
+    padding: 10px 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    height: auto;
     border: 5px solid #051b85fa;
 }
 
 .mensaje-bienvenida {
-    font-family: 'Orbitron', sans-serif; /* Fuente personalizada */
-    font-size: 60px; /* Tamaño del texto */
-    color: #051b85fa; /* Color del texto */
-    text-align: center; /* Centra el texto */
+    font-family: 'Orbitron', sans-serif;
+    font-size: 60px;
+    color: #051b85fa;
+    text-align: center;
     font-weight: bold;
-    margin-bottom: 20px; /* Espacio debajo del mensaje */
-    margin-top: 20; /* Elimina el espacio superior */
-    padding-left: 150px; 
-
+    margin-bottom: 20px;
+    margin-top: 20;
+    padding-left: 150px;
 }
 .subtitulo {
-    font-family: 'Orbitron', sans-serif; /* Fuente personalizada */
-    font-size: 20px; /* Tamaño del texto */
-    color: #333333; /* Color del texto */
-    text-align: center; /* Centra el texto */
-    margin-top: 10px; /* Espacio entre el mensaje de bienvenida y el subtítulo */
-    margin-bottom: 20px; /* Espacio debajo del subtítulo */
+    font-family: 'Orbitron', sans-serif;
+    font-size: 20px;
+    color: #333333;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 .asistentes {
-    display: flex; /* Organiza los asistentes en una fila */
-    justify-content: space-between; /* Coloca a Santi a la izquierda y a Sara a la derecha */
-    align-items: center; /* Alinea verticalmente los elementos */
-    margin: 10px 0; /* Reduce el espacio entre los asistentes y otros elementos */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
 }
 .asistente {
     text-align: center;
-    flex: 1; /* Cada asistente ocupa el mismo espacio */
+    flex: 1;
 }
 .asistente-img {
-    width: 150px; /* Ajusta el tamaño de las imágenes */
-    height: auto; /* Mantén la proporción de las imágenes */
-    margin-bottom: 10px; /* Espacio entre la imagen y el mensaje */
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
 }
 .asistente-sara-img {
-    width: 120px; /* Ajusta el ancho de la imagen de Sara */
-    height: auto; /* Mantén la proporción de la imagen */
+    width: 120px;
+    height: auto;
 }
 
 .asistente-mensaje {
@@ -163,44 +155,42 @@ button:hover {
     font-weight: bold;
     text-align: center;
     margin-top: 10px;
-    margin-left: 10x; /* Agrega espacio a la izquierda */
+    margin-left: 10x;
     margin-right: 15px;
 }
 
 .indicaciones {
-    max-width: 600px; /* Limita el ancho del texto */
-    margin: 0px auto 80px auto; /* Reduce el margen inferior */
-    text-align: center; /* Centra el texto dentro del contenedor */
-    font-family: 'Orbitron', sans-serif; /* Fuente personalizada */
-    font-size: 18px; /* Tamaño del texto */
-    line-height: 1.6; /* Espaciado entre líneas */
-    color: #333333; /* Color del texto */
+    max-width: 600px;
+    margin: 0px auto 80px auto;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333333;
 }
-
 
 .lista-instrucciones {
-    list-style-type: square; /* Usa viñetas */
-    list-style-position: inside; /* Coloca las viñetas dentro del contenedor */
-    text-align: left; /* Alinea el texto hacia la derecha */
-    margin: 0 auto; /* Centra la lista horizontalmente */
-    padding: 0; /* Elimina el padding predeterminado */
-    max-width: 300px; /* Limita el ancho de la lista */
+    list-style-type: square;
+    list-style-position: inside;
+    text-align: left;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 300px;
     font-family: 'Orbitron', sans-serif;
-    font-size: 17px; /* Tamaño del texto */
-    line-height: 1.6; /* Espaciado entre líneas */
-    color: #333333; /* Color del texto */
+    font-size: 17px;
+    line-height: 1.6;
+    color: #333333;
     font-weight: bold;
-    
 }
 .lista-instrucciones li::marker {
-    color: #1FD1E9; /* Cambia el color de las viñetas a azul */
+    color: #1FD1E9;
 }
 
 .boton {
-    position: absolute; /* Posiciona el botón dentro del contenedor */
-    bottom: 20px; /* Ajusta la distancia desde la parte inferior del contenedor */
-    left: 48%; /* Centra horizontalmente */
-    transform: translateX(-50%); /* Ajusta el centrado */
+    position: absolute;
+    bottom: 20px;
+    left: 48%;
+    transform: translateX(-50%);
     background-color: #2b9739;
     color: white;
     text-decoration: none;
@@ -215,6 +205,6 @@ button:hover {
 }
     
 .boton:hover {
-    background-color: #098f1b; /* Cambia el color al pasar el mouse */
+    background-color: #098f1b;
 }
 

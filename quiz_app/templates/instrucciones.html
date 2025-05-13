@@ -10,7 +10,6 @@
     <div class="contenedor-instrucciones">
         <h1 class="mensaje-bienvenida"><strong>¡Hola, {{ nombre }}!</strong></h1>
         <p class="subtitulo"><strong>Antes de comenzar el quiz, lee atentamente las siguientes instrucciones:</strong></p>
-        <!-- Sección de los asistentes -->
         <div class="asistentes">
             <!-- Asistente Santi -->
             <div class="asistente">
@@ -20,7 +19,6 @@
                     y estoy aquí para ayudarte.
                 </p>
             </div>
-
             <!-- Indicaciones en el centro -->
             <div class="indicaciones">
                 <ul class="lista-instrucciones">
@@ -29,7 +27,6 @@
                     <li>Al finalizar, podrás ver tu puntuación.</li>
                 </ul>
             </div>
-
             <!-- Asistente Sara -->
             <div class="asistente">
                 <img src="{{ url_for('static', filename='imagenes/robot_sara.png') }}" alt="Asistente Sara" class="asistente-img asistente-sara-img">
@@ -39,8 +36,6 @@
                 </p>
             </div>
         </div>
-
-        <!-- Botón para continuar al quiz -->
         <a href="/preguntas" class="boton">Comenzar Quiz</a>
     </div>
 </body>
