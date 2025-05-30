@@ -4,14 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resultados</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='estilos/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilos/resultado.css') }}">
 </head>
 <body>
     <div class="contenedor-resultados">
         <h1>Resultados Finales</h1>
-        <p><strong>Puntuación Total:</strong> {{ puntuacion }} / 100</p>
+        <div class="info-usuario-puntos">
+            <div class="usuario">
+                <strong>Usuario:</strong> {{ usuario }}
+            </div>
+            <div class="puntos">
+                <strong>Puntos Totales:</strong> {{ puntuacion }} / 100
+            </div>
+        </div>
+        <table class="tabla-resultados">
+            <thead>
+                <tr>
+                    <th>Pregunta</th>
+                    <th>Respuesta</th>
+                    <th>Puntaje</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for resultado in resultados_preguntas %}
+                <tr>
+                    <td>{{ resultado.pregunta }}</td>
+                    <td>
+                        {% if resultado.correcta %}
+                            Correcta
+                        {% else %}
+                            Incorrecta
+                        {% endif %}
+                    </td>
+                    <td>{{ resultado.puntaje }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
         <form action="/reiniciar" method="GET">
-            <button type="submit" class="boton">Volver al Inicio</button>
+            <button type="submit" class="boton">Volver al inicio</button>
         </form>
     </div>
 </body>

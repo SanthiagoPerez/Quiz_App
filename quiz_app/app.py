@@ -16,6 +16,8 @@ def index():
 @app.route('/instrucciones', methods=['GET'])  # Página de instrucciones
 def instrucciones():
     nombre = request.args.get('nombre')  # Captura el nombre enviado desde el formulario
+    if nombre:
+        session['usuario'] = nombre  # Santi agregue esto, dice que guarda el nombre o el apdo en la sesión
     return render_template('instrucciones.html', nombre=nombre)
 
 @app.route('/preguntas', methods=['GET', 'POST'])  # Página de preguntas
@@ -30,17 +32,28 @@ def quiz():
                  session['preguntas'] = selected_questions  # Guarda las preguntas en la sesión
                  session['pregunta_actual'] = 0  # Inicializa el índice de la pregunta actual
                  session['puntuacion'] = 0  # Inicializa la puntuación
+                 session['resultados_preguntas'] = []  # Santi tambien este se agrego nuevo, que es para guardar resultados de cada pregunta
 
     if request.method == 'POST':
         preguntas = session.get('preguntas', [])
         pregunta_actual = session.get('pregunta_actual', 0)
+        resultados_preguntas = session.get('resultados_preguntas', [])# Esto tambien se agrego Santi
 
         if pregunta_actual < len(preguntas):
-            respuesta = request.form.get('respuesta')  # Captura la respuesta del usuario
-            # Compara la respuesta enviada (letra) con la respuesta correcta
-            if respuesta == preguntas[pregunta_actual]['respuesta_correcta']:
-                session['puntuacion'] += 10  # Suma 10 puntos si la respuesta es correcta
-            session['pregunta_actual'] += 1  # Avanza a la siguiente pregunta
+            respuesta = request.form.get('respuesta')
+            correcta = respuesta == preguntas[pregunta_actual]['respuesta_correcta']
+            puntaje = 10 if correcta else 0
+
+            # Santi todo eso dice que guarda el resultado de la pregunta
+            resultados_preguntas.append({
+                "pregunta": preguntas[pregunta_actual]['pregunta'],
+                "correcta": correcta,
+                "puntaje": puntaje
+            })
+            session['resultados_preguntas'] = resultados_preguntas
+            if correcta:
+                session['puntuacion'] += 10
+            session['pregunta_actual'] += 1
 
         # Redirige después de procesar la respuesta para evitar reenvío de formulario
         return redirect(url_for('quiz'))
@@ -57,7 +70,14 @@ def quiz():
 @app.route('/resultado')  # Página de resultados
 def resultado():
     puntuacion = session.get('puntuacion', 0)
-    return render_template('resultado.html', puntuacion=puntuacion)
+    usuario = session.get('usuario', 'Usuario')
+    resultados_preguntas = session.get('resultados_preguntas', [])
+    return render_template(
+        'resultado.html',
+        puntuacion=puntuacion,
+        usuario=usuario,
+        resultados_preguntas=resultados_preguntas
+    )
 
 @app.route('/reiniciar')  # Ruta para reiniciar el cuestionario
 def reiniciar():

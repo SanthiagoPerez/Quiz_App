@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+body {
+    background: #1FD1E9;
+    font-family: 'Orbitron', sans-serif;
+    color: #222;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-resultados {
+    background: #fff;
+    border-radius: 13px;
+    border: 5px solid #051b85fa;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    max-width: 1000px;
+    width: 100%;
+    margin: 40px auto;
+    padding: 24px 32px 32px 32px;
+    box-sizing: border-box;
+    text-align: right; /* Alinea el contenido a la derecha */
+}
+
+h1 {
+    color: #051b85fa;
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 0;
+    line-height: 1.1;
+}
+
+.info-usuario-puntos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+    width: 110%;
+    margin-left: -5px;
+    box-sizing: border-box;
+    font-size: 1.15rem;
+}
+
+.usuario {
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.puntos {
+    text-align: right;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.tabla-resultados {
+    width: 100%;           /* Ocupa todo el ancho del contenedor */
+    border-collapse: collapse;
+    margin-top: 12px;
+    margin: 12px auto 32px auto;
+    margin-left: -5%;
+    font-size: 20px;
+}
+
+.tabla-resultados th, .tabla-resultados td {
+    border: 1px solid #1FD1E9;
+    padding: 8px 18px;
+    text-align: center;
+    word-break: break-word;
+}
+
+.tabla-resultados th {
+    background: #1FD1E9;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.tabla-resultados td {
+    font-size: 15px;
+}
+
+.tabla-resultados td:nth-child(2) {
+    font-weight: bold;
+}
+
+.tabla-resultados td:nth-child(2):contains('Correcta') {
+    color: #2b9739;
+}
+.tabla-resultados td:nth-child(2):contains('Incorrecta') {
+    color: #d32f2f;
+}
+
+.boton {
+    background: #2b9739;
+    color: #fff;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    border: none;
+    padding: 10px 25px;
+    font-size: 17px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    display: block;
+    margin: 0 auto;
+}
+
+.boton:hover {
+    background: #098f1b;
+}
