@@ -14,8 +14,8 @@
                 <div class="barra" id="barra"></div>
             </div>
     
-            <form action="/instrucciones" method="GET" onsubmit="return iniciarCarga()">
-                <input type="text" name="nombre" placeholder="Escribe tu nombre o apodo" required>
+            <form action="/instrucciones" method="POST" onsubmit="return iniciarCarga()">
+                <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre o apodo" required>
                 <button type="submit">COMENZAR</button>
             </form>
         </div>

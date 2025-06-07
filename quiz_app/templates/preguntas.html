@@ -15,8 +15,11 @@
                 <div class="opciones">
                     {% for opcion in pregunta.opciones %}
                         <label class="opcion">
-                            <!-- Usar el filtro personalizado 'chr' -->
-                            <input type="radio" name="respuesta" value="{{ loop.index0 | chr }}" required>
+                            {% if pregunta.tipo == 'multiple' %}
+                                <input type="radio" name="respuesta_{{ loop.index0 }}" value="{{ loop.index0 | chr }}" >
+                            {% else %}
+                                <input type="radio" name="respuesta" value="{{ loop.index0 | chr }}" required>
+                            {% endif %}
                             {{ opcion }}
                         </label>
                     {% endfor %}

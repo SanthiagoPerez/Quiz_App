@@ -25,21 +25,21 @@
                     <th>Puntaje</th>
                 </tr>
             </thead>
-            <tbody>
-                {% for resultado in resultados_preguntas %}
-                <tr>
-                    <td>{{ resultado.pregunta }}</td>
-                    <td>
-                        {% if resultado.correcta %}
-                            Correcta
-                        {% else %}
-                            Incorrecta
-                        {% endif %}
-                    </td>
-                    <td>{{ resultado.puntaje }}</td>
-                </tr>
-                {% endfor %}
-            </tbody>
+<tbody>
+    {% for resultado in resultados_preguntas %}
+    <tr class="{{ 'correcta' if resultado.correcta else 'incorrecta' }}">
+        <td>{{ resultado.pregunta }}</td>
+        <td>
+            {% if resultado.correcta %}
+                Correcta
+            {% else %}
+                Incorrecta
+            {% endif %}
+        </td>
+        <td>{{ resultado.puntaje|int }}/{{ resultado.puntaje_maximo }}</td>
+    </tr>
+    {% endfor %}
+</tbody>
         </table>
         <form action="/reiniciar" method="GET">
             <button type="submit" class="boton">Volver al inicio</button>
